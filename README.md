@@ -4,6 +4,19 @@
 
 [here](https://hub.docker.com/repository/docker/yoshi429/goose-migration/general)
 
+## Directory structure
+
+workdir is `go/src`
+
+```zsh
+.
+├── Dockerfile
+├── README.md
+├── db
+│   └── *sql
+└── entrypoint.sh
+```
+
 ## goose install
 
 ```
@@ -63,16 +76,3 @@ GOOSE_DRIVER=postgres GOOSE_DBSTRING="host=localhost port=5432 user=postgres dbn
 ```
 
 実行後自動的にgoose-veserion更新される
-
-## Directory structure
-
-workdir is `go/src`
-
-```zsh
-.
-├── Dockerfile
-├── README.md
-├── db
-│   └── *sql
-└── entrypoint.sh
-```
