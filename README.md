@@ -42,13 +42,13 @@ GOOSE_DRIVER=postgres GOOSE_DBSTRING="host=localhost port=5432 user=postgres dbn
 
 goose_db_versionの追加
 
-```
+```zsh
 GOOSE_DRIVER=postgres GOOSE_DBSTRING="host=localhost port=5432 user=postgres dbname=postgres password=password sslmode=disable" goose status
 ```
 
 ファイルのフォーマットを作成、編集
 
-```
+```zsh
 cd backend/db/migrations
 goose create create_user sql
 ```
@@ -57,7 +57,7 @@ goose create create_user sql
 
 実行
 
-```
+```zsh
 # Macの場合
 # move to directory which is exist sql files
 cd backend/db/migrations
@@ -66,7 +66,7 @@ cd backend/db/migrations
 GOOSE_DRIVER=postgres GOOSE_DBSTRING="host=localhost port=5432 user=postgres dbname=postgres password=password sslmode=disable" goose up
 ```
 
-```
+```zsh
 # WSLの場合
 # move to directory which is exist sql files
 cd backend/db/migrations
