@@ -1,5 +1,4 @@
-# FROM gomicro/goose
-FROM golang:1.19
+ FROM golang:1.21-alpine3.18
 
 ENV ROOT=/go/src
 WORKDIR ${ROOT}
